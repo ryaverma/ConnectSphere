@@ -1,0 +1,212 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: #0d1b2a;
+  --card: #ffffff;
+  --card-foreground: #0d1b2a;
+  --popover: #ffffff;
+  --popover-foreground: #0d1b2a;
+  --primary: #0a66c2;
+  --primary-foreground: #ffffff;
+  --secondary: #f7f9fa;
+  --secondary-foreground: #0d1b2a;
+  --muted: #f7f9fa;
+  --muted-foreground: #525252;
+  --accent: #f7f9fa;
+  --accent-foreground: #0d1b2a;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: #e6e6e6;
+  --input: transparent;
+  --input-background: #f7f9fa;
+  --switch-background: #c6c6c6;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #0a66c2;
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.5rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0d1b2a;
+  --sidebar-primary: #0a66c2;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f7f9fa;
+  --sidebar-accent-foreground: #0d1b2a;
+  --sidebar-border: #e6e6e6;
+  --sidebar-ring: #0a66c2;
+
+  /* ConnectSphere Design System */
+  --cs-bg-primary: #ffffff;
+  --cs-bg-secondary: #f7f9fa;
+  --cs-bg-card: #ffffff;
+  --cs-bg-hover: #f7f9fa;
+  --cs-text-primary: #0d1b2a;
+  --cs-text-secondary: #525252;
+  --cs-text-muted: #828282;
+  --cs-text-light: #a8a8a8;
+  --cs-border: #e6e6e6;
+  --cs-border-hover: #c6c6c6;
+  --cs-accent: #0a66c2;
+  --cs-accent-hover: #004182;
+  --cs-success: #00703c;
+  --cs-warning: #b39200;
+  --cs-shadow: rgba(0, 0, 0, 0.08);
+}
+
+.dark {
+  --background: #202124;
+  --foreground: #e8eaed;
+  --card: #303134;
+  --card-foreground: #e8eaed;
+  --popover: #303134;
+  --popover-foreground: #e8eaed;
+  --primary: #8ab4f8;
+  --primary-foreground: #202124;
+  --secondary: #292a2d;
+  --secondary-foreground: #e8eaed;
+  --muted: #3c4043;
+  --muted-foreground: #9aa0a6;
+  --accent: #3c4043;
+  --accent-foreground: #e8eaed;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fca5a5;
+  --border: #3c4043;
+  --input: #292a2d;
+  --input-background: #292a2d;
+  --switch-background: #5f6368;
+  --ring: #8ab4f8;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: #202124;
+  --sidebar-foreground: #e8eaed;
+  --sidebar-primary: #8ab4f8;
+  --sidebar-primary-foreground: #202124;
+  --sidebar-accent: #292a2d;
+  --sidebar-accent-foreground: #e8eaed;
+  --sidebar-border: #3c4043;
+  --sidebar-ring: #8ab4f8;
+
+  /* ConnectSphere Design System - Dark */
+  --cs-bg-primary: #202124;
+  --cs-bg-secondary: #292a2d;
+  --cs-bg-card: #303134;
+  --cs-bg-hover: #3c4043;
+  --cs-text-primary: #e8eaed;
+  --cs-text-secondary: #9aa0a6;
+  --cs-text-muted: #71767a;
+  --cs-text-light: #5f6368;
+  --cs-border: #3c4043;
+  --cs-border-hover: #5f6368;
+  --cs-accent: #8ab4f8;
+  --cs-accent-hover: #4285f4;
+  --cs-success: #34a853;
+  --cs-warning: #fbbc04;
+  --cs-shadow: rgba(0, 0, 0, 0.4);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}

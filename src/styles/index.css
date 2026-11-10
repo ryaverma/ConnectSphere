@@ -1,0 +1,70 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* ==========================================
+   ConnectSphere Micro-Interaction Globals
+   ========================================== */
+
+/* Shimmer skeleton animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+.dark .skeleton-shimmer {
+  background: linear-gradient(90deg, #292a2d 25%, #3c4043 50%, #292a2d 75%);
+  background-size: 200% 100%;
+}
+
+/* Smooth focus ring global utility */
+*:focus-visible {
+  outline: 2px solid #0a66c2;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.dark *:focus-visible {
+  outline-color: #8ab4f8;
+}
+
+/* Smooth button press feedback */
+button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+/* Card hover transition */
+.card-hover {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card-hover:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  transform: translateY(-2px);
+}
+
+.dark .card-hover:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #292a2d;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #5f6368;
+  border-radius: 3px;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #71767a;
+}

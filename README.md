@@ -1,8 +1,6 @@
 
   # ConnectSphere Website Development
 
-  This is a code bundle for ConnectSphere Website Development. The original project is available at https://www.figma.com/design/NZzBKyJWIGFzjjJCPOEk4D/ConnectSphere-Website-Development.
-
   ## Running the code
 
   Run `npm i` to install the dependencies.
